@@ -56,7 +56,7 @@ function BootingScreen(props) {
         </a>
         <span className="font-bold mx-1">|</span>
         <a
-          href="https://github.com/akuldevali/portfolio"
+          href="https://github.com/akuldevali/akuldevali.github.io"
           rel="noreferrer noopener"
           target="_blank"
           className="underline"
