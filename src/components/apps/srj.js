@@ -65,7 +65,7 @@ export class AboutAkul extends Component {
         >
           <img
             className=" w-3 md:w-4"
-            alt="about sharan"
+            alt="about akul"
             src="./themes/Yaru/status/about.svg"
           />
           <span className=" ml-1 md:ml-2 text-gray-50 ">About Me</span>
@@ -450,7 +450,7 @@ function Projects() {
     //     "Architected dynamic AWS Lambda functions, orchestrated by Terraform, to adeptly handle variable workloads."
     //   ],
     //   "domains": ["AWS Lambda", "API Gateway", "DynamoDB", "S3", "RS256 JWT Tokens", "Auth0", "Typescript"],
-    //   "link": "https://github.com/Sharansrj567/Infogram"
+    //   "link": "https://github.com/srj567/Infogram"
     // },
     // {
     //   "name": "Vision Bank - Scalable Microservices Backend",
