@@ -604,7 +604,7 @@ function Resume() {
   return (
     <iframe
       className="h-full w-full"
-      src="./files/AkulDevali-Resume.pdf"
+      src="./files/Akul-Resume.pdf"
       title="Akul Devali resume"
       frameBorder="0"
     ></iframe>
