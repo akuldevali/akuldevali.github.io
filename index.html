@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akul Devali — Platform Engineer</title>
+    <meta name="description" content="Portfolio of Akul Gopal Devali, Cloud & MLOps Platform Engineer specializing in Kubernetes, AWS, and ML infrastructure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#home" class="nav-logo">
+            <div class="nav-avatar-wrap" id="navAvatarWrap">
+                <img src="assets/images/profile.jpg" alt="" class="nav-avatar" id="navAvatar">
+                <span class="nav-avatar-fallback">AD</span>
+            </div>
+            <span>Akul Devali</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="grid-overlay"></div>
+        <div class="hero-nodes">
+            <div class="hnode hn1"><i class="devicon-kubernetes-plain colored"></i></div>
+            <div class="hnode hn2"><i class="devicon-docker-original colored"></i></div>
+            <div class="hnode hn3"><i class="devicon-python-original colored"></i></div>
+            <div class="hnode hn4"><i class="devicon-terraform-original colored"></i></div>
+            <div class="hnode hn5 hn-txt" style="color:#f90">AWS</div>
+            <div class="hnode hn6"><i class="devicon-github-original"></i></div>
+            <div class="hnode hn7"><i class="devicon-grafana-original colored"></i></div>
+            <div class="hnode hn8 hn-txt" style="color:#8b5cf6">ML</div>
+        </div>
+        <div class="hero-pings">
+            <div class="ping ping1"></div>
+            <div class="ping ping2"></div>
+            <div class="ping ping3"></div>
+            <div class="ping ping4"></div>
+        </div>
+    </div>
+    <div class="hero-container">
+        <div class="hero-text fade-in">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to opportunities
+            </div>
+            <p class="hero-greeting">Hi, I'm</p>
+            <h1 class="hero-name">Akul Gopal<br><span class="name-accent">Devali</span></h1>
+            <h2 class="hero-title">Cloud &amp; MLOps Platform Engineer</h2>
+            <p class="hero-desc">Building scalable Kubernetes platforms and ML infrastructure. MS Computer Science @ NC State University.</p>
+            <div class="hero-ctas">
+                <a href="https://github.com/akuldevali" target="_blank" rel="noopener" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/akuldevali" target="_blank" rel="noopener" class="btn btn-secondary">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="AkulResume.pdf" download class="btn btn-outline">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Resume
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Exp.</span></div>
+                <div class="stat-div"></div>
+                <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Technologies</span></div>
+                <div class="stat-div"></div>
+                <div class="stat"><span class="stat-num">2</span><span class="stat-label">Certifications</span></div>
+            </div>
+        </div>
+        <div class="hero-image fade-in delay-2">
+            <div class="profile-frame">
+                <div class="profile-ring-outer"></div>
+                <div class="profile-ring-inner"></div>
+                <div class="profile-placeholder"><span>AGD</span></div>
+                <img src="assets/images/profile.jpg" alt="Akul Gopal Devali" class="profile-photo" id="profilePhoto">
+            </div>
+            <div class="float-badge badge-top">
+                <i class="devicon-amazonwebservices-plain colored"></i>
+                <span>AWS Certified</span>
+            </div>
+            <div class="float-badge badge-bot">
+                <i class="devicon-kubernetes-plain colored"></i>
+                <span>Kubernetes</span>
+            </div>
+        </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </a>
+</section>
+
+<!-- TECH TICKER -->
+<div class="ticker-section" aria-hidden="true">
+    <div class="ticker-fade-l"></div>
+    <div class="ticker-fade-r"></div>
+    <div class="ticker-wrap">
+        <div class="ticker-track">
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/helm/helm-original.svg" alt="Helm"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="Docker"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" alt="AWS"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/terraform/terraform-original.svg" alt="Terraform"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/ansible/ansible-original.svg" alt="Ansible"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/githubactions/githubactions-original.svg" alt="GitHub Actions"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jenkins/jenkins-original.svg" alt="Jenkins"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/grafana/grafana-original.svg" alt="Grafana"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/prometheus/prometheus-original.svg" alt="Prometheus"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="Python"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/bash/bash-original.svg" alt="Bash"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/argocd/argocd-original.svg" alt="Argo CD"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="Git"></div>
+            <!-- duplicate for seamless loop -->
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/helm/helm-original.svg" alt="Helm"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="Docker"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/amazonwebservices/amazonwebservices-line-wordmark.svg" alt="AWS"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/terraform/terraform-original.svg" alt="Terraform"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/ansible/ansible-original.svg" alt="Ansible"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/githubactions/githubactions-original.svg" alt="GitHub Actions"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jenkins/jenkins-original.svg" alt="Jenkins"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/grafana/grafana-original.svg" alt="Grafana"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/prometheus/prometheus-original.svg" alt="Prometheus"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="Python"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/bash/bash-original.svg" alt="Bash"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/argocd/argocd-original.svg" alt="Argo CD"></div>
+            <div class="tick-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="Git"></div>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">About</span>
+            <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p>Software developer with a passion for <strong>cloud and platform engineering</strong>. I automate obsessively — release pipelines, build promotion, change management, the full lifecycle of getting code safely from a branch to production.</p>
+                <p>Lately deep in <strong>Kubernetes</strong>: staring at CrashLoopBackOffs, writing Helm charts, configuring Ingress controllers, untangling cluster networking. Pursuing my <strong>Master of CS at NC State University</strong></p>
+            </div>
+            <div class="info-card reveal from-right delay-1">
+                <div class="info-row">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.06 6.06l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+                    <div><span class="info-label">Phone</span><span class="info-val">+1 (919) 521-2861</span></div>
+                </div>
+                <div class="info-row">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <div><span class="info-label">Email</span><a href="mailto:akul.devali@gmail.com" class="info-link">akul.devali@gmail.com</a></div>
+                </div>
+                <div class="info-row">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <div><span class="info-label">Location</span><span class="info-val">Raleigh, North Carolina</span></div>
+                </div>
+                <div class="info-row">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <div><span class="info-label">Status</span><span class="info-val available">Open to opportunities across USA</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Skills</span>
+            <h2 class="section-title">Technical Stack</h2>
+        </div>
+        <div class="skills-wrapper">
+            <div class="skill-cat reveal">
+                <h3 class="cat-title"><span>🤖</span> ML Platform &amp; MLOps</h3>
+                <div class="skill-grid">
+                    <div class="skill-item"><div class="sk-icon txt-icon" style="background:#e85d04">KF</div><span>Kubeflow</span></div>
+                    <div class="skill-item"><div class="sk-icon txt-icon" style="background:#0194e2">ML</div><span>MLflow</span></div>
+                    <div class="skill-item"><div class="sk-icon txt-icon" style="background:#326ce5">KS</div><span>KServe</span></div>
+                    <div class="skill-item"><div class="sk-icon txt-icon" style="background:#945dd6">DV</div><span>DVC</span></div>
+                    <div class="skill-item"><div class="sk-icon txt-icon" style="background:#ef4444">CD</div><span>Argo CD</span></div>
+                    <div class="skill-item"><div class="sk-icon txt-icon" style="background:#16a34a">MR</div><span>Model Registry</span></div>
+                    <div class="skill-item"><div class="sk-icon txt-icon" style="background:#d97706">MM</div><span>Model Monitoring</span></div>
+                </div>
+            </div>
+            <div class="skill-cat reveal delay-1">
+                <h3 class="cat-title"><span>☁️</span> Cloud &amp; Infrastructure</h3>
+                <div class="skill-grid">
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-amazonwebservices-original colored"></i></div><span>AWS</span></div>
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-kubernetes-plain colored"></i></div><span>Kubernetes</span></div>
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-terraform-original colored"></i></div><span>Terraform</span></div>
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-helm-original colored"></i></div><span>Helm</span></div>
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-ansible-plain colored"></i></div><span>Ansible</span></div>
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-docker-original colored"></i></div><span>Docker</span></div>
+                    <div class="skill-item"><div class="sk-icon txt-icon" style="background:#466bb0">IS</div><span>Istio</span></div>
+                </div>
+            </div>
+            <div class="skill-cat reveal delay-2">
+                <h3 class="cat-title"><span>📊</span> CI/CD &amp; Observability</h3>
+                <div class="skill-grid">
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-githubactions-plain colored"></i></div><span>GitHub Actions</span></div>
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-jenkins-plain colored"></i></div><span>Jenkins</span></div>
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-grafana-original colored"></i></div><span>Grafana</span></div>
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-prometheus-original colored"></i></div><span>Prometheus</span></div>
+                    <div class="skill-item"><div class="sk-icon txt-icon" style="background:#7d64ff">k6</div><span>k6</span></div>
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-python-original colored"></i></div><span>Python</span></div>
+                    <div class="skill-item"><div class="sk-icon"><i class="devicon-bash-original colored"></i></div><span>Bash</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Experience</span>
+            <h2 class="section-title">Work History</h2>
+        </div>
+        <div class="timeline">
+            <div class="tl-item reveal from-left">
+                <div class="tl-dot current"></div>
+                <div class="tl-card">
+                    <div class="tl-header">
+                        <div>
+                            <h3 class="job-title">Cloud Platform Engineer</h3>
+                            <p class="job-co">Liquid Rocketry Lab &mdash; Raleigh, NC</p>
+                        </div>
+                        <span class="job-date">Aug 2025 &ndash; Present</span>
+                    </div>
+                    <p class="job-para">I'm building a Kubernetes-based distributed replay platform from scratch — owning everything from cluster topology and network architecture to deployment automation. One of the more interesting problems has been enabling <strong>1:1 user-to-pod isolation</strong> through carefully crafted Services and Ingress routing, so every concurrent session gets its own sandboxed environment. I automated the full environment provisioning lifecycle with Jenkins, so new replay instances spin up and tear down without any manual intervention.</p>
+                    <p class="job-para">The platform now handles up to <strong>20,000 concurrent replay sessions</strong> with dynamic resource orchestration, and has held <strong>99.999% availability</strong> under sustained simulation workloads across both Akamai and AWS EKS clusters.</p>
+                    <div class="tag-row">
+                        <span class="tag">Kubernetes</span><span class="tag">Jenkins</span><span class="tag">AWS EKS</span><span class="tag">Akamai</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tl-item reveal from-left delay-1">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <div class="tl-header">
+                        <div>
+                            <h3 class="job-title">Cloud Engineering Intern</h3>
+                            <p class="job-co">Brane Services Pvt Ltd &mdash; Bengaluru, India</p>
+                        </div>
+                        <span class="job-date">Aug 2022 &ndash; Feb 2023</span>
+                    </div>
+                    <p class="job-para">My main focus was making <strong>15+ microservices</strong> more reliable and cost-efficient. I built an internal reliability platform that automated capacity benchmarking and surfaced performance trends before they turned into production incidents. On the cost side, I cut AWS compute spend by <strong>25%</strong> — mostly through instance right-sizing and shifting 60% of workloads to spot instances with smart scheduling policies.</p>
+                    <p class="job-para">I also built a load testing framework with K6 wired directly into the <strong>Jenkins CI/CD pipelines</strong> as a performance quality gate — if a build failed load tests in staging, it didn't go to production, full stop. That alone cut manual testing effort by 40% and kept regressions from slipping through. To close the loop, I set up a <strong>Grafana and Prometheus</strong> observability stack that gave the whole team real-time health visibility across every environment.</p>
+                    <div class="tag-row">
+                        <span class="tag">AWS</span><span class="tag">K6</span><span class="tag">Grafana</span><span class="tag">Prometheus</span><span class="tag">Jenkins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Projects</span>
+            <h2 class="section-title">Featured Work</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="proj-card reveal from-scale">
+                <div class="proj-img" id="projImg1">
+                    <img src="assets/images/project-mlops.jpg" alt="MLOps Churn Prediction Platform">
+                    <div class="proj-placeholder">MLOps</div>
+                </div>
+                <div class="proj-body">
+                    <span class="proj-date">Jan 2026 &ndash; Mar 2026</span>
+                    <h3 class="proj-title">MLOps Churn Prediction Platform</h3>
+                    <p class="proj-desc">End-to-end MLOps pipeline for training, versioning and deploying a churn prediction model. GitOps deployment with Argo CD, automated CI with GitHub Actions, and scalable inference with KServe on Kubernetes backed by AWS S3.</p>
+                    <div class="tag-row">
+                        <span class="tag">Argo CD</span><span class="tag">Kubernetes</span><span class="tag">KServe</span><span class="tag">GitHub Actions</span><span class="tag">AWS S3</span><span class="tag">Python</span>
+                    </div>
+                    <a href="https://github.com/akuldevali" target="_blank" rel="noopener" class="proj-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="proj-card reveal from-scale delay-1">
+                <div class="proj-img" id="projImg2">
+                    <img src="assets/images/project-cicd.jpg" alt="Containerized Microservices Deployment">
+                    <div class="proj-placeholder">CI/CD</div>
+                </div>
+                <div class="proj-body">
+                    <span class="proj-date">Aug 2025 &ndash; Dec 2025</span>
+                    <h3 class="proj-title">Containerized Microservices Deployment</h3>
+                    <p class="proj-desc">Robust CI/CD pipeline for a Node.js app with shift-left security — pre-commit hooks for static analysis, CI scans for vulnerabilities, Ansible playbooks for config management, and a k6 performance quality gate blocking regressions in staging.</p>
+                    <div class="tag-row">
+                        <span class="tag">GitHub Actions</span><span class="tag">EC2</span><span class="tag">Ansible</span><span class="tag">k6</span><span class="tag">Docker</span><span class="tag">GitFlow</span>
+                    </div>
+                    <a href="https://github.com/akuldevali" target="_blank" rel="noopener" class="proj-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Education</span>
+            <h2 class="section-title">Academic Background</h2>
+        </div>
+        <div class="edu-grid">
+            <div class="edu-card reveal from-scale">
+                <div class="edu-icon">🎓</div>
+                <div class="edu-body">
+                    <h3>Master of Computer Science</h3>
+                    <p class="edu-school">North Carolina State University</p>
+                    <p class="edu-loc">Raleigh, NC, USA</p>
+                    <div class="edu-meta">
+                        <span class="edu-date">Aug 2024 &ndash; May 2026</span>
+                        <span class="edu-gpa">GPA: 3.9 / 4.0</span>
+                    </div>
+                    <p class="edu-courses"><strong>Coursework:</strong> Algorithm Design, DevOps, Computer Networks, Cloud Computing, Software Engineering</p>
+                </div>
+            </div>
+            <div class="edu-card reveal from-scale delay-1">
+                <div class="edu-icon">🏛️</div>
+                <div class="edu-body">
+                    <h3>B.E. in Computer Science</h3>
+                    <p class="edu-school">Vidyavardhaka College of Engineering</p>
+                    <p class="edu-loc">Mysuru, India</p>
+                    <div class="edu-meta">
+                        <span class="edu-date">Aug 2018 &ndash; Jul 2022</span>
+                        <span class="edu-gpa">CGPA: 8.4 / 10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Achievements</span>
+            <h2 class="section-title">Recognition &amp; Certifications</h2>
+        </div>
+        <div class="ach-grid">
+            <div class="ach-card reveal from-pop">
+                <div class="ach-icon">🏆</div>
+                <div><h3>AWS All Builders Welcome Grant</h3><p>Awarded to attend <strong>AWS re:Invent Las Vegas 2025</strong> for contributions to Cloud and DevOps learning.</p></div>
+            </div>
+            <div class="ach-card reveal from-pop delay-1">
+                <div class="ach-icon">☁️</div>
+                <div><h3>AWS Certified Solutions Architect</h3><p>Associate-level certification in designing distributed systems on AWS.</p></div>
+            </div>
+            <div class="ach-card reveal from-pop delay-2">
+                <div class="ach-icon">🌐</div>
+                <div><h3>Google Cloud Specialization</h3><p>Completed <strong>Architecting with Google Compute Engine</strong> specialization on GCP.</p></div>
+            </div>
+            <div class="ach-card reveal from-pop delay-1">
+                <div class="ach-icon">👨‍🏫</div>
+                <div><h3>Teaching Assistant — NC State</h3><p>TA for IT Concentration Business Management. Active in <strong>Google Developer Student Club</strong> Cloud Chapter.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Contact</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-sub">Open to full-time roles, internships, and interesting projects.</p>
+        </div>
+        <div class="contact-content reveal">
+            <a href="mailto:akul.devali@gmail.com" class="contact-cta">
+                akul.devali@gmail.com
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <div class="socials">
+                <a href="https://github.com/akuldevali" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/akuldevali" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:akul.devali@gmail.com" class="social-btn" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="AkulResume.pdf" download class="social-btn" aria-label="Download Resume">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 Akul Gopal Devali &middot; Built for the web</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
