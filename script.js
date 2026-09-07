@@ -1,118 +1,60 @@
 // ============================================================
-// Theme
+// Control Plane — interactivity
 // ============================================================
-const html = document.documentElement;
-const themeBtn = document.getElementById('themeToggle');
+document.documentElement.classList.add('js');
 
-const saved = localStorage.getItem('theme') || 'dark';
-html.setAttribute('data-theme', saved);
+// ------------------------------------------------------------
+// Uptime counter (career start: Aug 2022)
+// ------------------------------------------------------------
+(function () {
+    const el = document.getElementById('uptime');
+    if (!el) return;
+    const start = new Date(2022, 7, 1); // Aug 2022
+    const now = new Date();
+    let months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+    const years = Math.floor(months / 12);
+    months %= 12;
+    el.textContent = years + 'y' + (months ? ' ' + months + 'm' : '');
+})();
 
-themeBtn.addEventListener('click', () => {
-    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-});
+// ------------------------------------------------------------
+// Scroll reveal
+// ------------------------------------------------------------
+(function () {
+    const els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+        els.forEach(el => el.classList.add('in'));
+        return;
+    }
+    const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('in');
+                io.unobserve(e.target);
+            }
+        });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    els.forEach(el => io.observe(el));
+})();
 
-// ============================================================
-// Mobile menu
-// ============================================================
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-
-hamburger.addEventListener('click', () => {
-    const open = mobileMenu.classList.toggle('open');
-    hamburger.classList.toggle('open', open);
-    hamburger.setAttribute('aria-expanded', open);
-});
-
-document.querySelectorAll('.mobile-link').forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        hamburger.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
+// ------------------------------------------------------------
+// Active nav link highlight
+// ------------------------------------------------------------
+(function () {
+    const links = document.querySelectorAll('.sb-link');
+    const map = new Map();
+    links.forEach(link => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) map.set(target, link);
     });
-});
-
-// ============================================================
-// Navbar scroll + active link
-// ============================================================
-const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    navbar.classList.toggle('scrolled', y > 50);
-    navbar.classList.toggle('shrunk',   y > 120);
-    highlightNav();
-}, { passive: true });
-
-function highlightNav() {
-    const sections = document.querySelectorAll('section[id]');
-    const links = document.querySelectorAll('.nav-link');
-    let current = '';
-    sections.forEach(sec => {
-        if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
-    });
-    links.forEach(l => {
-        l.classList.toggle('active', l.getAttribute('href') === '#' + current);
-    });
-}
-
-// ============================================================
-// Smooth scroll (offset for fixed nav)
-// ============================================================
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (!target) return;
-        e.preventDefault();
-        const navH = navbar.offsetHeight;
-        window.scrollTo({ top: target.offsetTop - navH, behavior: 'smooth' });
-    });
-});
-
-// ============================================================
-// Scroll reveal (IntersectionObserver)
-// ============================================================
-const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-// also catch any standalone variant classes added without base .reveal
-document.querySelectorAll('.from-left, .from-right, .from-scale, .from-pop').forEach(el => {
-    if (!el.classList.contains('reveal')) io.observe(el);
-});
-
-// ============================================================
-// Profile photo — show on load, keep placeholder on error
-// ============================================================
-const profilePhoto = document.getElementById('profilePhoto');
-if (profilePhoto) {
-    const tryShow = () => {
-        if (profilePhoto.complete && profilePhoto.naturalWidth > 0) {
-            profilePhoto.classList.add('loaded');
-        }
-    };
-    profilePhoto.addEventListener('load', tryShow);
-    profilePhoto.addEventListener('error', () => { /* placeholder stays visible */ });
-    tryShow(); // already cached
-}
-
-// ============================================================
-// Nav avatar — show on load
-// ============================================================
-const navAvatar = document.getElementById('navAvatar');
-if (navAvatar) {
-    navAvatar.addEventListener('load', () => navAvatar.classList.add('loaded'));
-    if (navAvatar.complete && navAvatar.naturalWidth > 0) navAvatar.classList.add('loaded');
-}
-
-// ============================================================
-// Project images — show on load, keep placeholder on error
-// ============================================================
-document.querySelectorAll('.proj-img img').forEach(img => {
-    const show = () => { if (img.naturalWidth > 0) img.classList.add('loaded'); };
-    img.addEventListener('load', show);
-    img.addEventListener('error', () => { img.style.display = 'none'; });
-    show();
-});
+    if (!map.size || !('IntersectionObserver' in window)) return;
+    const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                links.forEach(l => l.classList.remove('active'));
+                map.get(e.target).classList.add('active');
+            }
+        });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    map.forEach((_, section) => io.observe(section));
+})();
