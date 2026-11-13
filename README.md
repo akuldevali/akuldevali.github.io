@@ -28,3 +28,21 @@ Then visit `http://localhost:8000`.
 
 Pushing to `main` publishes automatically via GitHub Pages. DNS and CDN for
 `akuldevali.fyi` are managed through Cloudflare.
+
+## Professional profile
+
+`linkedin/index.html` serves a LinkedIn-inspired, independent professional profile
+at `/linkedin/`. It shares the existing résumé and requires no build step, backend,
+or DNS changes. The existing Pages workflow uploads the new directory automatically.
+
+- `linkedin/profile.css` — responsive profile layout and print styles
+- `linkedin/profile.js` — contact dialog, post filters, section search, and sharing
+
+Content is static HTML. Update experience, education, and the two Activity posts
+directly in `linkedin/index.html`. The current avatar uses initials; the post covers
+are designed artwork, not event photographs. Post copy is drafted from the supplied
+milestones. No connection, follower, reaction, or endorsement counts are fabricated.
+
+Preview from the repository root with `python -m http.server 8000`, then open
+`http://localhost:8000/linkedin/`. Both `/linkedin` (redirect) and `/linkedin/`
+work with directory-index hosting. Merging into `main` triggers publication.
