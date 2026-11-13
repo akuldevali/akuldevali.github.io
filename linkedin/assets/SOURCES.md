@@ -17,3 +17,18 @@ Images remain local to avoid third-party runtime image dependencies.
 | vvce.png | https://vvce.ac.in/wp-content/uploads/2024/07/vvce-logo-300x300.png | Undergraduate education |
 
 No logo is redrawn or recolored. The AWS logo was extracted from inline HTML; FlexGen’s supplied square JPEG is stored unchanged. Initials remain for personal avatars and organizations without a verified asset.
+
+## Personal photographs
+
+Supplied by the user in `pics.zip`, stored unchanged. Avatar and cover framing use CSS; the full photographs remain available.
+
+| Local asset | Uploaded file | Placement |
+| --- | --- | --- |
+| photos/profile.jpg | akul_dp.jpg | Profile, navigation, sidebar, and post avatars |
+| photos/cat-cover.jpg | cktc.jpeg | Profile cover |
+| photos/graduation.jpg | gradpic.jpeg | Graduation post |
+| photos/reinvent-portrait.jpg | rinvent.jpeg | re:Invent gallery, first image |
+| photos/reinvent-event.jpg | reinvent2.jpeg | re:Invent gallery, second image |
+| photos/flexgen-interns.jpg | andretti.jfif | Internship gallery, second image |
+
+`flexgen-wordmark.png` is the complete high-resolution logo embedded in the first slide of [FlexGen's presentation hosted by NC State](https://freedm.ncsu.edu/wp-content/uploads/sites/306/2026/06/04-Leith-FlexGen-BESS-for-AI-Data-Centers.pdf), extracted with its original transparency. It appears first in the internship gallery, on a dark backing.
