@@ -404,3 +404,7 @@ a{color:inherit}
 .gallery-position{min-width:40px;text-align:center;font-size:12px;font-variant-numeric:tabular-nums}
 @media(max-width:540px){.filters{flex-wrap:wrap}.photo-slide>a{height:340px}.wordmark-slide>a{padding:28px}.post-author .small{font-size:11px}}
 @media print{.gallery-track{display:block;overflow:visible}.photo-slide{break-inside:avoid}.photo-slide>a{height:320px}.gallery-controls{display:none}.avatar img{transform:scale(1.8)}}
+
+.company-link{color:var(--ink);font-weight:600}
+.company-link:hover{color:var(--blue)}
+a.org-icon:focus-visible{outline:3px solid var(--blue);outline-offset:3px}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akul Devali — DevOps Engineer</title>
+    <link rel="canonical" href="https://akuldevali.fyi/me/">
+    <meta name="description" content="Portfolio of Akul Gopal Devali, DevOps Engineer specializing in Kubernetes, AWS, CI/CD, and cloud infrastructure.">
+    <meta name="theme-color" content="#0a0f19">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- STATUS BAR / NAV -->
+<header class="statusbar" id="statusbar">
+    <div class="sb-inner">
+        <a href="#top" class="sb-id"><span class="dot" aria-hidden="true"></span><b>akul-devali</b><span class="sb-health">· cluster healthy</span></a>
+        <nav class="sb-nav" aria-label="Sections">
+            <a href="#about" class="sb-link">about</a>
+            <a href="#workloads" class="sb-link">workloads</a>
+            <a href="#services" class="sb-link">services</a>
+            <a href="#capacity" class="sb-link">capacity</a>
+            <a href="#education" class="sb-link">education</a>
+            <a href="#contact" class="sb-link">contact</a>
+            <a href="../" class="sb-profile-link">linkedin ↗</a>
+        </nav>
+        <div class="sb-meta">
+            <span class="sb-uptime">uptime <b id="uptime">--</b></span>
+            <span class="sb-open ok">● open to work</span>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+    <div class="wrap hero-grid">
+        <div class="hero-text">
+            <div class="crumb">~/portfolio <span class="p">$</span> whoami<span class="cursor" aria-hidden="true"></span></div>
+            <h1>Akul Gopal Devali</h1>
+            <p class="role">// DevOps Engineer — Kubernetes · AWS · CI/CD</p>
+            <p class="lead">I run the paths code takes from a branch to production. Currently at <a href="https://flexgen.com/">FlexGen Power Systems</a>; MS Computer Science at NC State University.</p>
+            <div class="btns">
+                <a class="btn primary" href="../Akul-Resume.pdf" download>Resume ↓</a>
+                <a class="btn" href="https://github.com/akuldevali" target="_blank" rel="noopener">GitHub ↗</a>
+                <a class="btn" href="mailto:akul.devali@gmail.com">Email</a>
+                <a class="btn" href="../">LinkedIn ↗</a>
+            </div>
+        </div>
+        <div class="metrics" aria-label="Key metrics">
+            <div class="metric"><div class="v">20,000</div><div class="k">concurrent sessions</div></div>
+            <div class="metric"><div class="v green">99.999%</div><div class="k">availability held</div></div>
+            <div class="metric"><div class="v">−25%</div><div class="k">aws spend cut</div></div>
+            <div class="metric"><div class="v">2×</div><div class="k">aws certified</div></div>
+        </div>
+    </div>
+</section>
+
+<div class="wrap">
+
+<!-- ABOUT -->
+<section class="panel reveal" id="about">
+    <div class="phead"><span class="t">$ kubectl describe node/akul — about</span><span class="c">last updated: sep 2026</span></div>
+    <div class="about-grid">
+        <div class="about-text">
+            <p>Software developer with a passion for <strong>cloud and platform engineering</strong>. I automate obsessively — release pipelines, build promotion, change management, the full lifecycle of getting code safely from a branch to production.</p>
+            <p>Lately deep in <strong>Kubernetes</strong>: staring at CrashLoopBackOffs, writing Helm charts, configuring Ingress controllers, untangling cluster networking. Pursuing my <strong>Master of Computer Science at NC State University</strong>.</p>
+        </div>
+        <dl class="about-info">
+            <div><dt>email</dt><dd><a href="mailto:akul.devali@gmail.com">akul.devali@gmail.com</a></dd></div>
+            <div><dt>phone</dt><dd>+1 (919) 521-2861</dd></div>
+            <div><dt>location</dt><dd>Raleigh, North Carolina</dd></div>
+            <div><dt>status</dt><dd class="ok">open to opportunities across USA</dd></div>
+        </dl>
+    </div>
+</section>
+
+<!-- WORKLOADS / EXPERIENCE -->
+<section class="panel reveal" id="workloads">
+    <div class="phead"><span class="t">Workloads — experience</span><span class="c">3 items</span></div>
+
+    <article class="wl">
+        <span class="st run">● RUNNING</span>
+        <h3><span class="nm">DevOps Engineer Intern</span> · <a class="co" href="https://flexgen.com/">FlexGen Power Systems</a></h3>
+        <span class="dt">Jun 2026 → now · Durham, NC</span>
+        <div class="wl-body">
+            <p>Refactoring a production release pipeline on <strong>AWS</strong> (CodePipeline, CodeBuild, EventBridge, Lambda), adding reliable change detection across a large monorepo so redundant builds are eliminated and pipeline run times drop. Built an automated <strong>build-notification system</strong> with Lambda, S3, and Slack that surfaces build status, artifacts, and failures in real time, plus a GitHub Actions CRON workflow for nightly dev builds to catch regressions early.</p>
+            <p>On the infrastructure side: extended the container build stage to <strong>dual-push Docker images</strong> to Docker Hub and Amazon ECR via configurable flags, migrating existing images with skopeo while preserving tags and digests. Provisioning production deployment servers end to end — BIOS PXE network boot, stress validation, automated <strong>Rocky Linux 9</strong> installs via MAAS — then post-provisioning config across the fleet with <strong>Ansible</strong>, deploying Grafana, Loki, and supporting services over a private network.</p>
+            <div class="tags"><span class="tag">aws-lambda</span><span class="tag">codepipeline</span><span class="tag">github-actions</span><span class="tag">ansible</span><span class="tag">amazon-ecr</span><span class="tag">maas</span></div>
+        </div>
+    </article>
+
+    <article class="wl">
+        <span class="st done">■ COMPLETE</span>
+        <h3><span class="nm">Cloud Platform Engineer</span> · <a class="co" href="https://liquidrocketry.com/">Liquid Rocketry Lab</a></h3>
+        <span class="dt">Aug 2025 → May 2026 · Raleigh, NC</span>
+        <div class="wl-body">
+            <p>Built a Kubernetes-based distributed replay platform from scratch — cluster topology, network architecture, deployment automation. Enabled <strong>1:1 user-to-pod isolation</strong> through carefully crafted Services and Ingress routing so every concurrent session got its own sandboxed environment, with the full provisioning lifecycle automated through Jenkins.</p>
+            <p>The platform scaled to <strong>20,000 concurrent replay sessions</strong> with dynamic resource orchestration and held <strong>99.999% availability</strong> under sustained simulation workloads across Akamai and AWS EKS clusters.</p>
+            <div class="tags"><span class="tag">kubernetes</span><span class="tag">jenkins</span><span class="tag">aws-eks</span><span class="tag">akamai</span></div>
+        </div>
+    </article>
+
+    <article class="wl">
+        <span class="st done">■ COMPLETE</span>
+        <h3><span class="nm">Performance Engineering Intern</span> · <span class="co">Brane Services Pvt Ltd</span></h3>
+        <span class="dt">Aug 2022 → Feb 2023 · Bengaluru, India</span>
+        <div class="wl-body">
+            <p>Made <strong>15+ microservices</strong> more reliable and cost-efficient: built an internal reliability platform that automated capacity benchmarking and surfaced performance trends before they became incidents. Cut AWS compute spend by <strong>25%</strong> through instance right-sizing and shifting 60% of workloads to spot instances with smart scheduling.</p>
+            <p>Built a <strong>k6 load-testing framework</strong> wired into Jenkins CI/CD as a performance quality gate — a build failing load tests in staging didn't ship, full stop. Cut manual testing effort by 40% and closed the loop with a <strong>Grafana + Prometheus</strong> observability stack for real-time health across every environment.</p>
+            <div class="tags"><span class="tag">aws</span><span class="tag">k6</span><span class="tag">grafana</span><span class="tag">prometheus</span><span class="tag">jenkins</span></div>
+        </div>
+    </article>
+</section>
+
+<!-- SERVICES / PROJECTS -->
+<section class="panel reveal" id="services">
+    <div class="phead"><span class="t">Services — projects</span><span class="c">5 healthy</span></div>
+    <div class="svcs">
+        <article class="svc">
+            <div class="img">ghcr.io/akuldevali/mlops-churn:v1.4</div>
+            <h3>MLOps Churn Prediction Platform</h3>
+            <p>End-to-end MLOps pipeline for training, versioning and deploying a churn prediction model — GitOps deployment with Argo CD, automated CI with GitHub Actions, scalable inference with KServe on Kubernetes backed by AWS S3.</p>
+            <div class="tags"><span class="tag">argo-cd</span><span class="tag">kubernetes</span><span class="tag">kserve</span><span class="tag">github-actions</span><span class="tag">aws-s3</span><span class="tag">python</span></div>
+            <a class="svc-link" href="https://github.com/akuldevali/MLOps_ChurnPrediction" target="_blank" rel="noopener">$ git clone ↗</a>
+        </article>
+        <article class="svc">
+            <div class="img">ghcr.io/akuldevali/microservices-cicd:v2.1</div>
+            <h3>Containerized Microservices Deployment</h3>
+            <p>CI/CD pipeline for a Node.js app with shift-left security — pre-commit hooks for static analysis, CI vulnerability scans, Ansible playbooks for config management, and a k6 performance quality gate blocking regressions in staging.</p>
+            <div class="tags"><span class="tag">github-actions</span><span class="tag">ec2</span><span class="tag">ansible</span><span class="tag">k6</span><span class="tag">docker</span><span class="tag">gitflow</span></div>
+            <a class="svc-link" href="https://github.com/akuldevali/DevopsProject" target="_blank" rel="noopener">$ git clone ↗</a>
+        </article>
+        <article class="svc">
+            <div class="img">ghcr.io/akuldevali/langchain-pdf:v1.0</div>
+            <h3>LangChain-PDF</h3>
+            <p>PDF-based RAG chatbot using LangChain with a custom memory module for multi-turn recall, Pinecone vector retrieval, token-level streaming, and a LangFuse self-learning feedback loop that improves response quality over time.</p>
+            <div class="tags"><span class="tag">langchain</span><span class="tag">openai-api</span><span class="tag">pinecone</span><span class="tag">langfuse</span><span class="tag">flask</span><span class="tag">redis</span></div>
+            <a class="svc-link" href="https://github.com/akuldevali/LangChain-pdf" target="_blank" rel="noopener">$ git clone ↗</a>
+        </article>
+        <article class="svc">
+            <div class="img">ghcr.io/se24ncsu/chefgpt:v1.2</div>
+            <h3>ChefGPT</h3>
+            <p>AI-powered recipe recommendation engine using Google Gemini that discovers personalized recipes from available ingredients and generates weekly meal plans with macro-nutrient tracking and dietary preferences.</p>
+            <div class="tags"><span class="tag">google-gemini</span><span class="tag">node-js</span><span class="tag">express</span><span class="tag">react</span><span class="tag">firebase</span></div>
+            <a class="svc-link" href="https://github.com/se24ncsu/ChefGPT" target="_blank" rel="noopener">$ git clone ↗</a>
+        </article>
+        <article class="svc">
+            <div class="img">ghcr.io/se24ncsu/popcornpicks:v1.3</div>
+            <h3>PopcornPicks</h3>
+            <p>Full-stack movie recommendation platform with collaborative filtering, authentication, friend-based recommendations, an interactive analytics dashboard, and email-based feedback sharing.</p>
+            <div class="tags"><span class="tag">python</span><span class="tag">flask</span><span class="tag">react</span><span class="tag">mongodb</span><span class="tag">docker</span></div>
+            <a class="svc-link" href="https://github.com/se24ncsu/PopcornPicks" target="_blank" rel="noopener">$ git clone ↗</a>
+        </article>
+    </div>
+</section>
+
+<!-- CAPACITY / SKILLS -->
+<section class="panel reveal" id="capacity">
+    <div class="phead"><span class="t">Node capacity — skills</span><span class="c">schedulable</span></div>
+    <div class="cap-group">
+        <h3 class="cap-label">ml-platform / mlops</h3>
+        <div class="caps"><span class="cap">kubeflow</span><span class="cap">mlflow</span><span class="cap">kserve</span><span class="cap">dvc</span><span class="cap">argo-cd</span><span class="cap">model-registry</span><span class="cap">model-monitoring</span></div>
+    </div>
+    <div class="cap-group">
+        <h3 class="cap-label">cloud / infrastructure</h3>
+        <div class="caps"><span class="cap">aws</span><span class="cap">kubernetes</span><span class="cap">terraform</span><span class="cap">helm</span><span class="cap">ansible</span><span class="cap">docker</span><span class="cap">istio</span></div>
+    </div>
+    <div class="cap-group">
+        <h3 class="cap-label">ci-cd / observability</h3>
+        <div class="caps"><span class="cap">github-actions</span><span class="cap">jenkins</span><span class="cap">grafana</span><span class="cap">prometheus</span><span class="cap">k6</span><span class="cap">python</span><span class="cap">bash</span></div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="panel reveal" id="education">
+    <div class="phead"><span class="t">Config — education</span><span class="c">2 entries</span></div>
+    <div class="edu">
+        <div class="edu-row">
+            <span class="dt">Aug 2024 → May 2026</span>
+            <div>
+                <h3>Master of Computer Science <span class="co">· North Carolina State University</span></h3>
+                <p class="edu-meta">Raleigh, NC · GPA 3.7 / 4.0</p>
+                <p class="edu-courses"><span class="key">coursework:</span> Algorithm Design, DevOps, Computer Networks, Cloud Computing, Software Engineering</p>
+            </div>
+        </div>
+        <div class="edu-row">
+            <span class="dt">Aug 2018 → Jul 2022</span>
+            <div>
+                <h3>B.E. in Computer Science <span class="co">· Vidyavardhaka College of Engineering</span></h3>
+                <p class="edu-meta">Mysuru, India · CGPA 8.4 / 10</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EVENTS / ACHIEVEMENTS -->
+<section class="panel reveal" id="events">
+    <div class="phead"><span class="t">Events — recognition &amp; certifications</span><span class="c">4 normal</span></div>
+    <div class="events">
+        <div class="event"><span class="etype">AWARD</span><div><h3>AWS All Builders Welcome Grant</h3><p>Awarded to attend <strong>AWS re:Invent Las Vegas 2025</strong> for contributions to Cloud and DevOps learning.</p></div></div>
+        <div class="event"><span class="etype">CERT</span><div><h3>AWS Certified Solutions Architect</h3><p>2× Associate-level certified in designing distributed systems on AWS.</p></div></div>
+        <div class="event"><span class="etype">CERT</span><div><h3>Google Cloud Specialization</h3><p>Completed <strong>Architecting with Google Compute Engine</strong> specialization on GCP.</p></div></div>
+        <div class="event"><span class="etype">ROLE</span><div><h3>Teaching Assistant — NC State</h3><p>TA for IT Concentration Business Management. Active in <strong>Google Developer Student Club</strong> Cloud Chapter.</p></div></div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="panel reveal" id="contact">
+    <div class="phead"><span class="t">Contact</span><span class="c">port 25 open</span></div>
+    <div class="term">
+        <div class="term-line"><span class="p">$</span> mail <a href="mailto:akul.devali@gmail.com">akul.devali@gmail.com</a></div>
+        <div class="term-line"><span class="p">$</span> open <a href="https://github.com/akuldevali" target="_blank" rel="noopener">github.com/akuldevali</a></div>
+        <div class="term-line"><span class="p">$</span> curl -O <a href="../Akul-Resume.pdf" download>akuldevali.fyi/Akul-Resume.pdf</a></div>
+        <div class="term-line cm"># open to full-time roles, internships, and interesting projects</div>
+    </div>
+</section>
+
+</div>
+</main>
+
+<footer class="footer">
+    <span>© 2026 akul gopal devali</span>
+    <span>deployed from main · github pages + cloudflare</span>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
