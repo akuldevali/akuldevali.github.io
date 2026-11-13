@@ -46,3 +46,6 @@ milestones. No connection, follower, reaction, or endorsement counts are fabrica
 Preview from the repository root with `python -m http.server 8000`, then open
 `http://localhost:8000/linkedin/`. Both `/linkedin` (redirect) and `/linkedin/`
 work with directory-index hosting. Merging into `main` triggers publication.
+
+Official organization logos are stored in `linkedin/assets/`; see
+`linkedin/assets/SOURCES.md` for provenance. They retain their native aspect ratios.
