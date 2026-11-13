@@ -42,7 +42,7 @@ function notify(message) {
 }
 document.querySelector('#copy-link').addEventListener('click', async () => {
   closeMenu();
-  const url = new URL('./', window.location.href).href;
+  const url = document.querySelector('link[rel="canonical"]').href;
   try {
     await navigator.clipboard.writeText(url);
     notify('Profile link copied');
