@@ -38,10 +38,10 @@ or DNS changes. The existing Pages workflow uploads the new directory automatica
 - `linkedin/profile.css` — responsive profile layout and print styles
 - `linkedin/profile.js` — contact dialog, post filters, section search, and sharing
 
-Content is static HTML. Update experience, education, and the two Activity posts
-directly in `linkedin/index.html`. The current avatar uses initials; the post covers
-are designed artwork, not event photographs. Post copy is drafted from the supplied
-milestones. No connection, follower, reaction, or endorsement counts are fabricated.
+Content is static HTML. Update experience, education, and the Activity posts
+directly in `linkedin/index.html`. The profile uses the supplied portrait and cat cover. Activity includes graduation,
+AWS re:Invent, and the FlexGen internship, with photographs and two-image galleries.
+Post copy is drafted from the supplied milestones. No connection, follower, reaction, or endorsement counts are fabricated.
 
 Preview from the repository root with `python -m http.server 8000`, then open
 `http://localhost:8000/linkedin/`. Both `/linkedin` (redirect) and `/linkedin/`
@@ -54,3 +54,10 @@ The profile’s navigation includes a light/dark toggle. `linkedin/theme.js` app
 a stored choice before styles load, otherwise follows the system color scheme.
 The choice is saved in localStorage under `akul-profile-theme`; the toggle also
 works for the current tab if storage is blocked. Print output keeps the light palette.
+
+Photo assets live in `linkedin/assets/photos/`; source filenames and placements are
+listed in `linkedin/assets/SOURCES.md`. The FlexGen gallery shows the complete official
+wordmark first and the internship group second. The re:Invent gallery starts with
+Akul’s signature-wall portrait. Galleries support buttons, horizontal swiping, and
+left/right arrow keys; click an image to open the full photograph. Print output
+includes all gallery images.

@@ -87,3 +87,43 @@ document.querySelector('.section-search').addEventListener('submit', event => {
   history.replaceState(null, '', `#${match.id}`);
   document.querySelector('#search-status').textContent = `Jumped to ${heading.textContent}`;
 });
+
+// Native horizontal scrolling works without JavaScript; buttons and arrow keys enhance it.
+document.querySelectorAll('.photo-gallery').forEach(gallery => {
+  const track = gallery.querySelector('.gallery-track');
+  const slides = [...gallery.querySelectorAll('.photo-slide')];
+  const controls = gallery.querySelector('.gallery-controls');
+  if (!controls) return;
+  controls.hidden = false;
+  const previous = controls.querySelector('.gallery-prev');
+  const next = controls.querySelector('.gallery-next');
+  const position = controls.querySelector('.gallery-position');
+  let current = 0;
+  function sync() {
+    if (!track.clientWidth) return; // A post filter can temporarily hide the gallery.
+    current = Math.min(slides.length - 1, Math.max(0, Math.round(track.scrollLeft / track.clientWidth)));
+    previous.disabled = current === 0;
+    next.disabled = current === slides.length - 1;
+    position.textContent = `${current + 1} / ${slides.length}`;
+  }
+  function move(delta) {
+    const index = Math.max(0, Math.min(slides.length - 1, current + delta));
+    track.scrollTo({ left: index * track.clientWidth, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  }
+  previous.addEventListener('click', () => move(-1));
+  next.addEventListener('click', () => move(1));
+  track.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      move(event.key === 'ArrowLeft' ? -1 : 1);
+    }
+  });
+  track.addEventListener('scroll', sync, { passive: true });
+  // Preserve the current image when changing device width or showing a filtered post.
+  new ResizeObserver(() => {
+    if (!track.clientWidth) return;
+    track.scrollLeft = current * track.clientWidth;
+    sync();
+  }).observe(track);
+  sync();
+});

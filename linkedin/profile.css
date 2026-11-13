@@ -378,3 +378,29 @@ a{color:inherit}
   [data-theme="dark"] .cert{background:#20362b}
   [data-theme="dark"] :focus-visible{outline-color:var(--blue)}
 }
+
+/* Personal photographs and post galleries. */
+.avatar{overflow:hidden}
+.avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 26%;transform:scale(1.8);transform-origin:50% 29%}
+.cover-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 52%}
+.cover:has(.cover-photo):after{display:none}
+.posts{grid-template-columns:1fr;gap:20px}
+.post-author h3{font-size:14px}
+.post-author .small{font-size:12px}
+.post-text{font-size:14px;padding:16px}
+.photo-gallery{border-top:1px solid var(--line);background:var(--surface)}
+.gallery-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;overscroll-behavior-x:contain}
+.photo-slide{flex:0 0 100%;min-width:0;margin:0;scroll-snap-align:start;scroll-snap-stop:always}
+.photo-slide>a{display:flex;align-items:center;justify-content:center;height:460px;background:var(--raised)}
+.photo-slide img{display:block;width:100%;height:100%;object-fit:contain}
+.photo-slide figcaption{padding:9px 16px;color:var(--muted);font-size:12px;background:var(--surface)}
+.wordmark-slide>a{background:#101820;padding:64px}
+.wordmark-slide img{object-fit:contain}
+.gallery-controls{display:flex;align-items:center;justify-content:center;gap:18px;padding:9px 16px;border-top:1px solid var(--line);color:var(--secondary-text)}
+.gallery-controls[hidden]{display:none}
+.gallery-controls button{border:1px solid var(--control-border);background:var(--surface);color:var(--ink);border-radius:50%;height:32px;width:32px;font-size:19px;line-height:1}
+.gallery-controls button:hover:not(:disabled){background:var(--soft-hover)}
+.gallery-controls button:disabled{opacity:.35;cursor:default}
+.gallery-position{min-width:40px;text-align:center;font-size:12px;font-variant-numeric:tabular-nums}
+@media(max-width:540px){.filters{flex-wrap:wrap}.photo-slide>a{height:340px}.wordmark-slide>a{padding:28px}.post-author .small{font-size:11px}}
+@media print{.gallery-track{display:block;overflow:visible}.photo-slide{break-inside:avoid}.photo-slide>a{height:320px}.gallery-controls{display:none}.avatar img{transform:scale(1.8)}}
