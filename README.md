@@ -49,3 +49,8 @@ work with directory-index hosting. Merging into `main` triggers publication.
 
 Official organization logos are stored in `linkedin/assets/`; see
 `linkedin/assets/SOURCES.md` for provenance. They retain their native aspect ratios.
+
+The profile’s navigation includes a light/dark toggle. `linkedin/theme.js` applies
+a stored choice before styles load, otherwise follows the system color scheme.
+The choice is saved in localStorage under `akul-profile-theme`; the toggle also
+works for the current tab if storage is blocked. Print output keeps the light palette.
